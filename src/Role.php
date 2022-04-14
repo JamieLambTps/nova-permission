@@ -1,6 +1,6 @@
 <?php
 
-namespace Vyuldashev\NovaPermission;
+namespace JamieLambTps\NovaPermission;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;

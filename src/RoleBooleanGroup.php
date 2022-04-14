@@ -1,6 +1,6 @@
 <?php
 
-namespace Vyuldashev\NovaPermission;
+namespace JamieLambTps\NovaPermission;
 
 use Illuminate\Support\Collection;
 use Laravel\Nova\Fields\BooleanGroup;

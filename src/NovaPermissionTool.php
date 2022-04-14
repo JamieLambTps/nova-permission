@@ -1,6 +1,6 @@
 <?php
 
-namespace Vyuldashev\NovaPermission;
+namespace JamieLambTps\NovaPermission;
 
 use Gate;
 use Laravel\Nova\Nova;
