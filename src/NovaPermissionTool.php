@@ -3,6 +3,7 @@
 namespace JamieLambTps\NovaPermission;
 
 use Gate;
+use Illuminate\Http\Request;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
 
@@ -28,6 +29,10 @@ class NovaPermissionTool extends Tool
 
         Gate::policy(config('permission.models.permission'), $this->permissionPolicy);
         Gate::policy(config('permission.models.role'), $this->rolePolicy);
+    }
+
+    public function menu(Request $request) {
+        parent::menu($request);
     }
 
     public function roleResource(string $roleResource): NovaPermissionTool
