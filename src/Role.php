@@ -11,7 +11,7 @@ use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Resource;
-use Laravel\Nova\Http\NovaRequest;
+use Laravel\Nova\Http\Requests\NovaRequest;
 use Spatie\Permission\PermissionRegistrar;
 
 class Role extends Resource
