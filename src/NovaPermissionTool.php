@@ -32,7 +32,7 @@ class NovaPermissionTool extends Tool
     }
 
     public function menu(Request $request) {
-        parent::menu($request);
+        // Test
     }
 
     public function roleResource(string $roleResource): NovaPermissionTool
