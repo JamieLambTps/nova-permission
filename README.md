@@ -1,7 +1,7 @@
 # A Laravel Nova tool for Spatie's laravel-permission library
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/jamieplambtps/nova-permission.svg?style=flat-square)](https://packagist.org/packages/vyuldashev/nova-permission)
-[![Total Downloads](https://img.shields.io/packagist/dt/jamielambtps/nova-permission.svg?style=flat-square)](https://packagist.org/packages/vyuldashev/nova-permission)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/jamieplambtps/nova-permission.svg?style=flat-square)](https://packagist.org/packages/jamielambtps/nova-permission)
+[![Total Downloads](https://img.shields.io/packagist/dt/jamielambtps/nova-permission.svg?style=flat-square)](https://packagist.org/packages/jamielambtps/nova-permission)
 
 ![screenshot 1](https://raw.githubusercontent.com/jamielambtps/nova-permission/master/docs/user-resource.png)
 
