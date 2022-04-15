@@ -2,7 +2,6 @@
 
 namespace JamieLambTps\NovaPermission;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Validation\Rule;
 use Laravel\Nova\Fields\DateTime;
@@ -12,6 +11,7 @@ use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Resource;
+use Laravel\Nova\Http\NovaRequest;
 use Spatie\Permission\PermissionRegistrar;
 
 class Permission extends Resource
@@ -78,10 +78,10 @@ class Permission extends Resource
     /**
      * Get the fields displayed by the resource.
      *
-     * @param Request $request
+     * @param NovaRequest $request
      * @return array
      */
-    public function fields(Request $request): array
+    public function fields(NovaRequest $request): array
     {
         $guardOptions = collect(config('auth.guards'))->mapWithKeys(function ($value, $key) {
             return [$key => $key];
@@ -121,10 +121,10 @@ class Permission extends Resource
     /**
      * Get the cards available for the request.
      *
-     * @param Request $request
+     * @param NovaRequest $request
      * @return array
      */
-    public function cards(Request $request): array
+    public function cards(NovaRequest $request): array
     {
         return [];
     }
@@ -132,10 +132,10 @@ class Permission extends Resource
     /**
      * Get the filters available for the resource.
      *
-     * @param Request $request
+     * @param NovaRequest $request
      * @return array
      */
-    public function filters(Request $request): array
+    public function filters(NovaRequest $request): array
     {
         return [];
     }
@@ -143,10 +143,10 @@ class Permission extends Resource
     /**
      * Get the lenses available for the resource.
      *
-     * @param Request $request
+     * @param NovaRequest $request
      * @return array
      */
-    public function lenses(Request $request): array
+    public function lenses(NovaRequest $request): array
     {
         return [];
     }
@@ -154,10 +154,10 @@ class Permission extends Resource
     /**
      * Get the actions available for the resource.
      *
-     * @param Request $request
+     * @param NovaRequest $request
      * @return array
      */
-    public function actions(Request $request): array
+    public function actions(NovaRequest $request): array
     {
         return [
             new AttachToRole,
